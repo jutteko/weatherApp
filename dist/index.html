@@ -1,0 +1,122 @@
+<!-- template.html-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css"
+    />
+    <title>Weather App || The Odin Project</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div class="container">
+      <div class="container-container">
+        <div class="container-current">
+          <div class="current-deel current-left">
+            <p class="location"></p>
+            <p class="observation-time"></p>
+            <p class="observation-date"></p>
+            <div class="wind">
+              <div class="wind-left">
+                <i class="wi wi-strong-wind"></i>
+              </div>
+              <div class="wind-right">
+                <div class="winddirection">
+                  <p class="winddirection-value"></p>
+                  <i id="windsymbol" class=""></i>
+                </div>
+                <div class="windspeed">
+                  <p class="windspeed-value"></p>
+                </div>
+                <div class="windgust">
+                  <p class="windgust-value"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="precipitation">
+              <div class="precipitation-left">
+                <i class="wi wi-raindrops"></i>
+              </div>
+              <div class="precipitation-right">
+                <div class="precipitation-total">
+                  <p class="precipitation-total-value"></p>
+                </div>
+                <div class="precipitation-type">
+                  <p class="precipitation-type-value"></p>
+                </div>
+                <div class="precipitation-probability">
+                  <p class="precipitation-probability-value"></p>
+                </div>
+              </div>
+            </div>
+            <div class="misc">
+              <div class="misc-left"></div>
+              <div class="misc-right">
+                <div class="misc-pressure">
+                  <i class="wi wi-barometer"></i>
+                  <p class="misc-pressure-value"></p>
+                </div>
+                <div class="misc-humidity">
+                  <i class="wi wi-humidity"></i>
+                  <p class="misc-humidity-value"></p>
+                </div>
+                <div class="misc-cloudcover">
+                  <i class="wi wi-cloud"></i>
+                  <p class="misc-cloudcover-value"></p>
+                </div>
+                <div class="misc-UV">
+                  <i class="wi wi-day-sunny"></i>
+                  <p class="misc-UV-value"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="current-deel current-center">
+            <img class="current-icon" src="" />
+            <p class="current-conditions"></p>
+          </div>
+          <div class="current-deel current-right">
+            <div class="temp-container">
+              <p class="current-temp"></p>
+              <p class="current-feels-like"></p>
+              <p class="current-dew"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-prediction"></div>
+
+        <div class="container-search-location">
+          <form class="location-input">
+            <label for="location" class="lbl-location"></label>
+            <input
+              type="text"
+              name="location"
+              id="input-location"
+              placeholder="location"
+            />
+            <button class="btn-location">Search</button>
+          </form>
+        </div>
+        <div class="container-footer">
+          <p>The Odin Project - Weather App</p>
+          <p>jurgen.francois@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
